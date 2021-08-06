@@ -26,7 +26,8 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ut2-Ub-jKg" kind="show" id="2Zz-TF-LAi"/>
+                                    <action selector="onFirstPageButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YpZ-5g-52t"/>
+                                    <segue destination="qmn-Pm-QAl" kind="show" id="FjX-ZJ-wuF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbL-nA-xqM">
@@ -38,7 +39,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NGo-qJ-ehc" kind="show" id="ZtM-UX-PX7"/>
+                                    <action selector="onSecondPageButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjP-8W-cmN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,50 +53,49 @@
             <point key="canvasLocation" x="923.1884057971015" y="103.79464285714285"/>
         </scene>
         <!--Second View Controller-->
-        <scene sceneID="oRL-a2-oyM">
+        <scene sceneID="3R8-NZ-BAX">
             <objects>
-                <viewController id="NGo-qJ-ehc" customClass="SecondViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wat-ZM-oYK">
+                <viewController storyboardIdentifier="SecondViewController" id="65G-BO-UMP" customClass="SecondViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fB6-Fi-Y1C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="JH2-Ni-NFC"/>
+                        <viewLayoutGuide key="safeArea" id="CBC-YY-DXo"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gI7-UK-h0c"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Za-m4-gad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2p-6q-S3A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1743" y="565"/>
+            <point key="canvasLocation" x="1687" y="541"/>
         </scene>
         <!--First View Controller-->
-        <scene sceneID="nnf-Te-tPm">
+        <scene sceneID="goo-Ca-RuB">
             <objects>
-                <viewController id="Ut2-Ub-jKg" customClass="FirstViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Tas-cQ-NAd">
+                <viewController storyboardIdentifier="FirstViewController" id="qmn-Pm-QAl" customClass="FirstViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yzN-bQ-ZEV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHf-zw-tMr">
-                                <rect key="frame" x="20" y="422" width="374" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqO-sX-jVS">
+                                <rect key="frame" x="20" y="447" width="374" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Back">
-                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="backBtnClick:" destination="Ut2-Ub-jKg" eventType="touchUpInside" id="a3l-LK-WUm"/>
+                                    <action selector="onBackButtonDidTap:" destination="qmn-Pm-QAl" eventType="touchUpInside" id="Vat-YK-Wzq"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="hIJ-2u-GZn"/>
+                        <viewLayoutGuide key="safeArea" id="nFL-1r-wpj"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="652-VC-B7n"/>
+                    <navigationItem key="navigationItem" id="PAe-Yv-aTq"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QrZ-pg-ahP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrP-7G-3i9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1742.0289855072465" y="-82.366071428571431"/>
+            <point key="canvasLocation" x="1686.9565217391305" y="-131.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0c7-Bg-4i7">
@@ -122,6 +122,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -11,13 +11,24 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true;
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func backBtnClick(_ sender: UIButton) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    
+    @IBAction func onBackButtonDidTap(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     
     /*
     // MARK: - Navigation

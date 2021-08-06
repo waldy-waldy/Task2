@@ -15,5 +15,15 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onFirstPageButtonDidTap(_ sender: UIButton) {
+        let firstViewController = storyboard?.instantiateViewController(identifier: "FirstViewController")
+        navigationController?.pushViewController(firstViewController!, animated: true)
+    }
+    
+    @IBAction func onSecondPageButtonDidTap(_ sender: UIButton) {
+        let secondViewController = storyboard?.instantiateViewController(identifier: "SecondViewController")
+        navigationController?.pushViewController(secondViewController!, animated: true)
+    }
+    
 }
 
